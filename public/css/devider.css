@@ -1,0 +1,24 @@
+/* devider icon */
+.hr-icon {
+    height: 5px;
+    width: 100px;
+    background: #4ae2fa;
+    border-radius: 2px;
+    position: relative;
+    margin-left: 20px;
+    left: 0;
+    display: inline-block;
+   
+  }
+  .hr-icon::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 0;
+    display: inline-block;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background-color: #4ae2fa;
+    box-shadow: 9px 0 0 0 #4ae2fa, 18px 0 0 0 #4ae2fa;
+  }

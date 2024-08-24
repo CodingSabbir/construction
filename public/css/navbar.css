@@ -1,0 +1,12 @@
+/* Navbar Container */
+.navbar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* High z-index to stay on top of other content */
+    background-color: #ffffff; /* White background */
+    border-bottom: 1px solid #e2e8f0; /* Subtle border at the bottom */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    min-height: 70px; /* Ensures consistent height */
+  }

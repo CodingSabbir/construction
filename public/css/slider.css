@@ -1,0 +1,74 @@
+
+/* slider css use section */
+/* Adjusting navigation button size for mobile and desktop */
+.mySwiper .swiper-button-prev,
+.mySwiper .swiper-button-next {
+  color: #1D294F; /* Change button color to red */
+  transition: all 0.3s;
+}
+.mySwiper .swiper-pagination-bullet {
+  background-color: #4ae2fa; /* Change bullet color to red */
+}
+
+.mySwiper .swiper-button-prev::after,
+.mySwiper .swiper-button-next::after {
+  font-size: 1.5rem; /* Default size for larger screens */
+}
+
+@media (min-width: 1024px) { /* lg */
+  .custom-swiper-button {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (min-width: 1280px) { /* xl */
+  .custom-swiper-button {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+  .mySwiper .swiper-button-next {
+    right: 20px;
+    background-color: rgba(211, 211, 211, 0.8); /* Adjusted opacity */
+    width: 50px; /* Set equal width and height */
+    height: 50px;
+    border-radius: 50%; /* Make it circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mySwiper .swiper-button-next:hover {
+  background-color: #4ae2fa; /* Change background color on hover */
+}
+
+/* If you want the same for the previous button */
+.mySwiper .swiper-button-prev {
+    left: 20px;
+    background-color: rgba(211, 211, 211, 0.8); /* Adjusted opacity */
+    width: 50px; /* Set equal width and height */
+    height: 50px;
+    border-radius: 50%; /* Make it circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mySwiper .swiper-button-prev:hover {
+  background-color: #4ae2fa; /* Change background color on hover */
+}
+
+
+/* Navbar css use section */
+a.from-after:hover:after { transform: scaleX(1); }
+a:after {
+  display:block;
+  content: '';
+  width: inherit;
+  border-bottom: solid 2px #4ae2fa;  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+  padding-top: 7px;
+}
+
+a.from-after:hover:after { transform: scaleX(1); }
