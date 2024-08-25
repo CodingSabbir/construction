@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import React, { useState } from 'react';
 import "../../public/css/navbar.css"
+import Link from 'next/link';
 export default function Navbar() {
   // State to manage the menu visibility
   const [menuOpen, setMenuOpen] = useState(false);
@@ -15,7 +16,7 @@ export default function Navbar() {
  
      <div>
       
-       <header className="navbar-container  flex border-b border-1 bg-white font-sans min-h-[70px] tracking-wide relative fixed top-0 left-0 right-0   shadow-md z-50">
+       <header className="navbar-container  flex border-b border-1 bg-white font-sans min-h-[70px] tracking-wide  fixed top-0 left-0 right-0   shadow-md z-50">
         <div className="w-full flex flex-wrap items-center justify-center gap-6  py-3 relative">
           <a href="javascript:void(0)">
             <Image src="https://readymadeui.com/readymadeui.svg" width={300} height={300} alt="logo" className="w-36" />
@@ -48,21 +49,21 @@ export default function Navbar() {
               className="lg:flex lg:ml-10 lg:gap-x-10 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-2/3 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-4 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50"
             >
               <li className="max-lg:border-b max-lg:pb-4 px-3 lg:hidden">
-                <a href="javascript:void(0)">
+                <Link href="/">
                   <Image src="https://readymadeui.com/readymadeui.svg" width={300} height={300} alt="logo" className="w-36" />
-                </a>
+                </Link>
               </li>
               <li className="max-lg:border-b max-lg:px-3 max-lg:py-2">
-                <a href="javascript:void(0)" className="hover:text-[#007bff] text-[#007bff] font-bold text-sm block">
+                <Link href="/" className="hover:text-[#4ae2fa] text-[#4ae2fa] font-bold text-sm block">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="group text-[14px] max-lg:border-b max-lg:px-3 max-lg:py-2 relative">
                 <a
                   href="javascript:void(0)"
-                  className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-500 font-bold text-[15px] block"
+                  className="hover:text-[#4ae2fa] hover:fill-[#4ae2fa] text-gray-500 font-bold text-[15px] block"
                 >
-                  Agencies
+                  About
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16px"
@@ -79,12 +80,96 @@ export default function Navbar() {
                 </a>
                 <div className="absolute lg:top-5 max-lg:top-8 -left-6 z-50 flex shadow-lg bg-white max-h-0 overflow-hidden group-hover:opacity-100 group-hover:max-h-[700px] px-8 group-hover:pb-8 group-hover:pt-6 transition-all duration-500">
                   <div className="lg:min-w-[180px] max-lg:min-w-[140px]">
-                    <h6 className="text-base text-[#007bff] font-bold">USA</h6>
+                    <h6 className="text-base text-[#4ae2fa] font-bold">Who We Are</h6>
+                    <ul className="mt-3 pt-3 border-t border-1 space-y-3">
+                      <li className="max-lg:border-b py-1 rounded">
+                        <Link 
+                          href="/company-profile"
+                          className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
+                        >
+                          Company Profile
+                        </Link>
+                      </li>
+                      <li className="max-lg:border-b py-1 rounded">
+                        <a
+                          href="javascript:void(0)"
+                          className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
+                        >
+                         Terms & Condition
+                        </a>
+                      </li>
+                      <li className="max-lg:border-b py-1 rounded">
+                        <a
+                          href="javascript:void(0)"
+                          className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
+                        >
+                         FAQ
+                        </a>
+                      </li>
+                     
+                    </ul>
+                  </div>
+                  <div className="lg:min-w-[180px] max-lg:min-w-[140px]">
+                    <h6 className="text-base text-[#4ae2fa] font-bold">Features
+                    </h6>
                     <ul className="mt-3 pt-3 border-t border-1 space-y-3">
                       <li className="max-lg:border-b py-1 rounded">
                         <a
                           href="javascript:void(0)"
-                          className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
+                          className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
+                        >
+                         Gallery Image
+                        </a>
+                      </li>
+                      <li className="max-lg:border-b py-1 rounded">
+                        <a
+                          href="javascript:void(0)"
+                          className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
+                        >
+                          Video Gallery
+                        </a>
+                      </li>
+                      <li className="max-lg:border-b py-1 rounded">
+                        <a
+                          href="javascript:void(0)"
+                          className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
+                        >
+                         Team
+                        </a>
+                      </li>
+                     
+                    </ul>
+                  </div>
+                 
+                </div>
+              </li>
+              <li className="group text-[14px] max-lg:border-b max-lg:px-3 max-lg:py-2 relative">
+                <a
+                  href="javascript:void(0)"
+                  className="hover:text-[#4ae2fa] hover:fill-[#4ae2fa] text-gray-500 font-bold text-[15px] block"
+                >
+                  About
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16px"
+                    height="16px"
+                    className="ml-1 inline-block"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z"
+                      data-name="16"
+                      data-original="#000000"
+                    />
+                  </svg>
+                </a>
+                <div className="absolute lg:top-5 max-lg:top-8 -left-6 z-50 flex shadow-lg bg-white max-h-0 overflow-hidden group-hover:opacity-100 group-hover:max-h-[700px] px-8 group-hover:pb-8 group-hover:pt-6 transition-all duration-500">
+                  <div className="lg:min-w-[180px] max-lg:min-w-[140px]">
+                    <ul className="mt-3 pt-3  space-y-3">
+                      <li className="max-lg:border-b py-1 rounded">
+                        <a
+                          href="javascript:void(0)"
+                          className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
                         >
                           New York
                         </a>
@@ -92,7 +177,7 @@ export default function Navbar() {
                       <li className="max-lg:border-b py-1 rounded">
                         <a
                           href="javascript:void(0)"
-                          className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
+                          className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
                         >
                           San Francisco
                         </a>
@@ -100,76 +185,20 @@ export default function Navbar() {
                       <li className="max-lg:border-b py-1 rounded">
                         <a
                           href="javascript:void(0)"
-                          className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
+                          className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
                         >
                           Houston
                         </a>
                       </li>
-                      <li className="max-lg:border-b py-1 rounded">
-                        <a
-                          href="javascript:void(0)"
-                          className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
-                        >
-                          Dallas
-                        </a>
-                      </li>
-                      <li className="max-lg:border-b py-1 rounded">
-                        <a
-                          href="javascript:void(0)"
-                          className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
-                        >
-                          Philadelphia
-                        </a>
-                      </li>
-                      <li className="max-lg:border-b py-1 rounded">
-                        <a
-                          href="javascript:void(0)"
-                          className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
-                        >
-                          San Diego
-                        </a>
-                      </li>
-                      <li className="max-lg:border-b py-1 rounded">
-                        <a
-                          href="javascript:void(0)"
-                          className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
-                        >
-                          Atlanta
-                        </a>
-                      </li>
-                      <li className="max-lg:border-b py-1 rounded">
-                        <a
-                          href="javascript:void(0)"
-                          className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
-                        >
-                          Austin
-                        </a>
-                      </li>
-                      <li className="max-lg:border-b py-1 rounded">
-                        <a
-                          href="javascript:void(0)"
-                          className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
-                        >
-                          Portland
-                        </a>
-                      </li>
-                      <li className="max-lg:border-b py-1 rounded">
-                        <a
-                          href="javascript:void(0)"
-                          className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
-                        >
-                          Denver
-                        </a>
-                      </li>
+                     
                     </ul>
                   </div>
                   <div className="lg:min-w-[180px] max-lg:min-w-[140px]">
-                    <h6 className="text-base text-[#007bff] font-bold">UK</h6>
-                    <ul className="mt-3 pt-3 border-t border-1 space-y-3">
+                    <ul className="mt-3 pt-3  space-y-3">
                       <li className="max-lg:border-b py-1 rounded">
                         <a
                           href="javascript:void(0)"
-                          className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
+                          className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
                         >
                           London
                         </a>
@@ -177,7 +206,7 @@ export default function Navbar() {
                       <li className="max-lg:border-b py-1 rounded">
                         <a
                           href="javascript:void(0)"
-                          className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
+                          className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
                         >
                           Edinburgh
                         </a>
@@ -185,7 +214,7 @@ export default function Navbar() {
                       <li className="max-lg:border-b py-1 rounded">
                         <a
                           href="javascript:void(0)"
-                          className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
+                          className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
                         >
                           Manchester
                         </a>
@@ -193,7 +222,7 @@ export default function Navbar() {
                       <li className="max-lg:border-b py-1 rounded">
                         <a
                           href="javascript:void(0)"
-                          className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
+                          className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
                         >
                           Birmingham
                         </a>
@@ -201,164 +230,195 @@ export default function Navbar() {
                     </ul>
                   </div>
                   <div className="lg:min-w-[180px] max-lg:min-w-[140px]">
-                    <h6 className="text-base text-[#007bff] font-bold">AUSTRALIA</h6>
+                    
+                    <ul className="mt-3 pt-3 space-y-3">
+                      <li className="max-lg:border-b py-1 rounded">
+                        <a
+                          href="javascript:void(0)"
+                          className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
+                        >
+                          London
+                        </a>
+                      </li>
+                      <li className="max-lg:border-b py-1 rounded">
+                        <a
+                          href="javascript:void(0)"
+                          className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
+                        >
+                          Edinburgh
+                        </a>
+                      </li>
+                      <li className="max-lg:border-b py-1 rounded">
+                        <a
+                          href="javascript:void(0)"
+                          className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
+                        >
+                          Manchester
+                        </a>
+                      </li>
+                      <li className="max-lg:border-b py-1 rounded">
+                        <a
+                          href="javascript:void(0)"
+                          className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
+                        >
+                          Birmingham
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                 
+                </div>
+              </li>
+              <li className="group text-[14px] max-lg:border-b max-lg:px-3 max-lg:py-2 relative">
+                <a
+                  href="javascript:void(0)"
+                  className="hover:text-[#4ae2fa] hover:fill-[#4ae2fa] text-gray-500 font-bold text-[15px] block"
+                >
+                  About
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16px"
+                    height="16px"
+                    className="ml-1 inline-block"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z"
+                      data-name="16"
+                      data-original="#000000"
+                    />
+                  </svg>
+                </a>
+                <div className="absolute lg:top-5 max-lg:top-8 -left-6 z-50 flex shadow-lg bg-white max-h-0 overflow-hidden group-hover:opacity-100 group-hover:max-h-[700px] px-8 group-hover:pb-8 group-hover:pt-6 transition-all duration-500">
+                  <div className="lg:min-w-[180px] max-lg:min-w-[140px]">
+                    <h6 className="text-base text-[#4ae2fa] font-bold">USA</h6>
                     <ul className="mt-3 pt-3 border-t border-1 space-y-3">
                       <li className="max-lg:border-b py-1 rounded">
                         <a
                           href="javascript:void(0)"
-                          className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
+                          className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
                         >
-                          Sydney
+                          New York
                         </a>
                       </li>
                       <li className="max-lg:border-b py-1 rounded">
                         <a
                           href="javascript:void(0)"
-                          className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
+                          className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
                         >
-                          Brisbane
+                          San Francisco
                         </a>
                       </li>
                       <li className="max-lg:border-b py-1 rounded">
                         <a
                           href="javascript:void(0)"
-                          className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
+                          className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
                         >
-                          Melbourne
+                          Houston
                         </a>
                       </li>
-                      <li className="max-lg:border-b py-1 rounded">
-                        <a
-                          href="javascript:void(0)"
-                          className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
-                        >
-                          Adelaide
-                        </a>
-                      </li>
-                      <li className="max-lg:border-b py-1 rounded">
-                        <a
-                          href="javascript:void(0)"
-                          className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
-                        >
-                          Perth
-                        </a>
-                      </li>
+                     
                     </ul>
                   </div>
                   <div className="lg:min-w-[180px] max-lg:min-w-[140px]">
-                    <h6 className="text-base text-[#007bff] font-bold">CANADA</h6>
+                    <h6 className="text-base text-[#4ae2fa] font-bold">UK</h6>
                     <ul className="mt-3 pt-3 border-t border-1 space-y-3">
                       <li className="max-lg:border-b py-1 rounded">
                         <a
                           href="javascript:void(0)"
-                          className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
+                          className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
                         >
-                          Vancouver
+                          London
                         </a>
                       </li>
                       <li className="max-lg:border-b py-1 rounded">
                         <a
                           href="javascript:void(0)"
-                          className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
+                          className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
                         >
-                          Montreal
+                          Edinburgh
                         </a>
                       </li>
                       <li className="max-lg:border-b py-1 rounded">
                         <a
                           href="javascript:void(0)"
-                          className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
+                          className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
                         >
-                          Toronto
+                          Manchester
                         </a>
                       </li>
                       <li className="max-lg:border-b py-1 rounded">
                         <a
                           href="javascript:void(0)"
-                          className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
+                          className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
                         >
-                          Calgary
+                          Birmingham
                         </a>
                       </li>
                     </ul>
                   </div>
-                  <div className="lg:min-w-[180px] max-lg:min-w-[140px]">
-                    <h6 className="text-base text-[#007bff] font-bold">OTHER</h6>
+                       <div className="lg:min-w-[180px] max-lg:min-w-[140px]">
+                    <h6 className="text-base text-[#4ae2fa] font-bold">UK</h6>
                     <ul className="mt-3 pt-3 border-t border-1 space-y-3">
                       <li className="max-lg:border-b py-1 rounded">
                         <a
                           href="javascript:void(0)"
-                          className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
+                          className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
                         >
-                          Tokyo
+                          London
                         </a>
                       </li>
                       <li className="max-lg:border-b py-1 rounded">
                         <a
                           href="javascript:void(0)"
-                          className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
+                          className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
                         >
-                          Dubai
+                          Edinburgh
                         </a>
                       </li>
                       <li className="max-lg:border-b py-1 rounded">
                         <a
                           href="javascript:void(0)"
-                          className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
+                          className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
                         >
-                          Cape Town
+                          Manchester
                         </a>
                       </li>
                       <li className="max-lg:border-b py-1 rounded">
                         <a
                           href="javascript:void(0)"
-                          className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
+                          className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
                         >
-                          New Delhi
-                        </a>
-                      </li>
-                      <li className="max-lg:border-b py-1 rounded">
-                        <a
-                          href="javascript:void(0)"
-                          className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
-                        >
-                          Hong Kong
-                        </a>
-                      </li>
-                      <li className="max-lg:border-b py-1 rounded">
-                        <a
-                          href="javascript:void(0)"
-                          className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
-                        >
-                          Johannesburg
+                          Birmingham
                         </a>
                       </li>
                     </ul>
                   </div>
+                 
                 </div>
               </li>
               <li className="max-lg:border-b max-lg:px-3 max-lg:py-2">
-                <a href="javascript:void(0)" className="hover:text-[#007bff] text-gray-500 font-bold text-sm block">
+                <a href="javascript:void(0)" className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block">
                   Services
                 </a>
               </li>
               <li className="max-lg:border-b max-lg:px-3 max-lg:py-2">
-                <a href="javascript:void(0)" className="hover:text-[#007bff] text-gray-500 font-bold text-sm block">
+                <a href="javascript:void(0)" className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block">
                   Career
                 </a>
               </li>
               <li className="max-lg:border-b max-lg:px-3 max-lg:py-2">
-                <a href="javascript:void(0)" className="hover:text-[#007bff] text-gray-500 font-bold text-sm block">
+                <a href="javascript:void(0)" className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block">
                   Portfolio
                 </a>
               </li>
               <li className="max-lg:border-b max-lg:px-3 max-lg:py-2">
-                <a href="javascript:void(0)" className="hover:text-[#007bff] text-gray-500 font-bold text-sm block">
+                <a href="javascript:void(0)" className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block">
                   Blog
                 </a>
               </li>
               <li className="max-lg:border-b max-lg:px-3 max-lg:py-2">
-                <a href="javascript:void(0)" className="hover:text-[#007bff] text-gray-500 font-bold text-sm block">
+                <a href="javascript:void(0)" className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block">
                   Contact
                 </a>
               </li>

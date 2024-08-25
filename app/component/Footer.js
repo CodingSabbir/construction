@@ -1,12 +1,29 @@
 import React from 'react'
 import { FaChevronRight ,FaMapMarkerAlt,FaCalculator } from "react-icons/fa";
-import { FaPhone,FaMessage   } from "react-icons/fa6";
-
+import { FaPhone,FaMessage,   } from "react-icons/fa6";
+import { FaFacebookF ,FaLinkedinIn ,FaYoutube } from "react-icons/fa";
 export default function Footer() {
   return (
     <footer className="font-sans tracking-wide bg-black py-10 px-4 sm:px-20">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         <div>
+          <div className='bg-[#4ae2fa] flex items-center justify-center -mt-16 mb-3'>
+            <div>
+              <p className='text-lg'>Follow us</p>
+            </div>
+          <div className="text-white flex gap-5 items-center  p-3">
+    <div className="border cursor-pointer hover:border-white text-black hover:text-white border-black rounded-full p-2">
+        <FaFacebookF />
+    </div>
+    <div className="border cursor-pointer hover:border-white text-black hover:text-white border-black rounded-full p-2">
+        <FaLinkedinIn />
+    </div>
+    <div className="border cursor-pointer hover:border-white text-black hover:text-white border-black rounded-full p-2">
+        <FaYoutube />
+    </div>
+</div>
+
+          </div>
           <h4 className="text-white  font-semibold text-lg mb-6 uppercase">About company</h4>
           <ul className="space-y-5">
             <li>
@@ -80,11 +97,19 @@ Dhanmondi, Dhaka-1209, Bangladesh.</p>
         </div>
       </div>
 
-      <div className="border-t text-center border-[#6b5f5f] pt-8 mt-8">
+      <div className="border-t  border-[#6b5f5f] pt-8 mt-8 flex justify-between">
         <p className="text-gray-600 text-sm">
         Copyright © 2024 <span className='text-gray-400 cursor-pointer hover:underline'>Naif Engineering & Builders Ltd</span> - Developed a by NAIF <span className='text-gray-400 cursor-pointer hover:underline'>Sabbir Rahman.</span>
         </p>
+        <div className=' flex gap-3 text-gray-600 text-sm'>
+          <p className='hidden sm:block cursor-pointer hover:underline hover:text-gray-300'>Disclaimer</p>
+          <p className='hidden sm:block cursor-pointer hover:underline hover:text-gray-300'>Privacy Policy</p>
+        </div>
       </div>
+      <div className=' sm:hidden block flex gap-3 text-gray-600 text-sm mt-5'>
+          <p className='cursor-pointer hover:underline hover:text-gray-300'>Disclaimer</p>
+          <p className=' cursor-pointer hover:underline hover:text-gray-300'>Privacy Policy</p>
+        </div>
     </footer>
   )
 }
