@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import "../../public/css/navbar.css"
 import Link from 'next/link';
 export default function Navbar() {
-  // State to manage the menu visibility
+// State to manage the menu visibility
   const [menuOpen, setMenuOpen] = useState(false);
 
   // Function to toggle the menu
@@ -12,15 +12,13 @@ export default function Navbar() {
     setMenuOpen(!menuOpen);
   };
 
-  return (
- 
-     <div>
-      
+  return ( 
+     <div>    
        <header className="navbar-container  flex border-b border-1 bg-white font-sans min-h-[70px] tracking-wide  fixed top-0 left-0 right-0   shadow-md z-50">
         <div className="w-full flex flex-wrap items-center justify-center gap-6  py-3 relative">
-          <a href="javascript:void(0)">
+          <Link href="/">
             <Image src="https://readymadeui.com/readymadeui.svg" width={300} height={300} alt="logo" className="w-36" />
-          </a>
+          </Link>
 
           <div
             id="collapseMenu"
@@ -148,7 +146,7 @@ export default function Navbar() {
                   href="javascript:void(0)"
                   className="hover:text-[#4ae2fa] hover:fill-[#4ae2fa] text-gray-500 font-bold text-[15px] block"
                 >
-                  About
+                  Service
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16px"
@@ -171,23 +169,23 @@ export default function Navbar() {
                           href="javascript:void(0)"
                           className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
                         >
-                          New York
+                          Design & Development
                         </a>
+                      </li>
+                      <li className="max-lg:border-b py-1 rounded">
+                        <Link
+                          href="/modern-warehouse"
+                          className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
+                        >
+                          Modern  Warehouse
+                        </Link>
                       </li>
                       <li className="max-lg:border-b py-1 rounded">
                         <a
                           href="javascript:void(0)"
                           className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
                         >
-                          San Francisco
-                        </a>
-                      </li>
-                      <li className="max-lg:border-b py-1 rounded">
-                        <a
-                          href="javascript:void(0)"
-                          className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
-                        >
-                          Houston
+                          Warehouse
                         </a>
                       </li>
                      

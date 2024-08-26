@@ -2,13 +2,13 @@
 import { useState, Fragment } from 'react';
 import { Dialog, DialogPanel, Transition } from '@headlessui/react';
 import Image from 'next/image';
-import thumb from '../../public/img/blog (1).jpg'; // Update the path accordingly
 
-export default function ModalVideo() {
+
+export default function ModalVideo({ imageSrc }) {
   const [modalOpen, setModalOpen] = useState(false);
 
   return (
-    <div className='py-10'>
+    <div className=' lg:pt-10'>
       {/* 1. The button */}
       <button
         className="relative flex justify-center items-center focus:outline-none focus-visible:ring focus-visible:ring-indigo-300 rounded-3xl group"
@@ -18,8 +18,8 @@ export default function ModalVideo() {
         aria-label="Watch the video"
       >
         <Image
-          className=" h-38 sm:h-80 transition-shadow duration-300 ease-in-out"
-          src={thumb}
+          className=" h-38 sm:h-52 transition-shadow duration-300 ease-in-out"
+          src={imageSrc}
           width={640} // Example width, update according to your image dimensions
           height={260} // Example height, update according to your image dimensions
           priority
