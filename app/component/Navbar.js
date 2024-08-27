@@ -181,12 +181,12 @@ export default function Navbar() {
                         </Link>
                       </li>
                       <li className="max-lg:border-b py-1 rounded">
-                        <a
-                          href="javascript:void(0)"
+                        <Link
+                          href="/piling-foundation"
                           className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
                         >
-                          Warehouse
-                        </a>
+                          Piling-Foundation
+                        </Link>
                       </li>
                      
                     </ul>

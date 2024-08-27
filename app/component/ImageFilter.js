@@ -84,7 +84,6 @@ const ImageFilter = () => {
             width={800} // Increased modal image width
             height={600} // Increased modal image height
           />
-
           {/* Close Icon */}
           <button
             onClick={closeModal}
