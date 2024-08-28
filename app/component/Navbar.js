@@ -120,12 +120,12 @@ export default function Navbar() {
                         </a>
                       </li>
                       <li className="max-lg:border-b py-1 rounded">
-                        <a
-                          href="javascript:void(0)"
+                        <Link
+                          href="/video-gallery"
                           className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
                         >
                           Video Gallery
-                        </a>
+                        </Link>
                       </li>
                       <li className="max-lg:border-b py-1 rounded">
                         <a
