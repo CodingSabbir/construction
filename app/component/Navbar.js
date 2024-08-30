@@ -194,36 +194,36 @@ export default function Navbar() {
                   <div className="lg:min-w-[180px] max-lg:min-w-[140px]">
                     <ul className="mt-3 pt-3  space-y-3">
                       <li className="max-lg:border-b py-1 rounded">
-                        <a
-                          href="javascript:void(0)"
+                        <Link
+                          href="/floor-coating-application"
                           className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
                         >
-                          London
-                        </a>
+                          Floor coating application
+                        </Link>
                       </li>
                       <li className="max-lg:border-b py-1 rounded">
-                        <a
-                          href="javascript:void(0)"
+                        <Link
+                          href="/supply-ready-mixed-concrete"
                           className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
                         >
-                          Edinburgh
-                        </a>
+                         Supply Ready Mixed Concrete
+                        </Link>
                       </li>
                       <li className="max-lg:border-b py-1 rounded">
-                        <a
-                          href="javascript:void(0)"
+                        <Link
+                          href="/plant-construction"
                           className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
                         >
-                          Manchester
-                        </a>
+                           Power Plant Construction
+                        </Link>
                       </li>
                       <li className="max-lg:border-b py-1 rounded">
-                        <a
-                          href="javascript:void(0)"
+                        <Link
+                          href="/general-contracting"
                           className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
                         >
-                          Birmingham
-                        </a>
+                        General Contracting Services
+                        </Link>
                       </li>
                     </ul>
                   </div>
