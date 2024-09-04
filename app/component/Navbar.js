@@ -52,14 +52,14 @@ export default function Navbar() {
                 </Link>
               </li>
               <li className="max-lg:border-b max-lg:px-3 max-lg:py-2">
-                <Link href="/" className="hover:text-[#4ae2fa] text-[#4ae2fa] font-bold text-sm block">
+                <Link href="/" className="hover:text-[#4ae2fa] text-[#4ae2fa] font-normal text-sm block">
                   Home
                 </Link>
               </li>
               <li className="group text-[14px] max-lg:border-b max-lg:px-3 max-lg:py-2 relative">
                 <a
                   href="javascript:void(0)"
-                  className="hover:text-[#4ae2fa] hover:fill-[#4ae2fa] text-gray-500 font-bold text-[15px] block"
+                  className="hover:text-[#4ae2fa] hover:fill-[#4ae2fa] text-gray-500 font-normal text-[15px] block"
                 >
                   About
                   <svg
@@ -78,12 +78,12 @@ export default function Navbar() {
                 </a>
                 <div className="absolute lg:top-5 max-lg:top-8 -left-6 z-50 flex shadow-lg bg-white max-h-0 overflow-hidden group-hover:opacity-100 group-hover:max-h-[700px] px-8 group-hover:pb-8 group-hover:pt-6 transition-all duration-500">
                   <div className="lg:min-w-[180px] max-lg:min-w-[140px]">
-                    <h6 className="text-base text-[#4ae2fa] font-bold">Who We Are</h6>
+                    <h6 className="text-base text-[#4ae2fa] font-normal">Who We Are</h6>
                     <ul className="mt-3 pt-3 border-t border-1 space-y-3">
                       <li className="max-lg:border-b py-1 rounded">
                         <Link 
                           href="/company-profile"
-                          className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
+                          className="hover:text-[#4ae2fa] text-gray-500 font-normal text-sm block"
                         >
                           Company Profile
                         </Link>
@@ -91,7 +91,7 @@ export default function Navbar() {
                       <li className="max-lg:border-b py-1 rounded">
                         <a
                           href="javascript:void(0)"
-                          className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
+                          className="hover:text-[#4ae2fa] text-gray-500 font-normal text-sm block"
                         >
                          Terms & Condition
                         </a>
@@ -99,7 +99,7 @@ export default function Navbar() {
                       <li className="max-lg:border-b py-1 rounded">
                         <a
                           href="javascript:void(0)"
-                          className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
+                          className="hover:text-[#4ae2fa] text-gray-500 font-normal text-sm block"
                         >
                          FAQ
                         </a>
@@ -108,13 +108,13 @@ export default function Navbar() {
                     </ul>
                   </div>
                   <div className="lg:min-w-[180px] max-lg:min-w-[140px]">
-                    <h6 className="text-base text-[#4ae2fa] font-bold">Features
+                    <h6 className="text-base text-[#4ae2fa] font-normal">Features
                     </h6>
                     <ul className="mt-3 pt-3 border-t border-1 space-y-3">
                       <li className="max-lg:border-b py-1 rounded">
                         <a
                           href="javascript:void(0)"
-                          className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
+                          className="hover:text-[#4ae2fa] text-gray-500 font-normal text-sm block"
                         >
                          Gallery Image
                         </a>
@@ -122,7 +122,7 @@ export default function Navbar() {
                       <li className="max-lg:border-b py-1 rounded">
                         <Link
                           href="/video-gallery"
-                          className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
+                          className="hover:text-[#4ae2fa] text-gray-500 font-normal text-sm block"
                         >
                           Video Gallery
                         </Link>
@@ -130,7 +130,7 @@ export default function Navbar() {
                       <li className="max-lg:border-b py-1 rounded">
                         <a
                           href="javascript:void(0)"
-                          className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
+                          className="hover:text-[#4ae2fa] text-gray-500 font-normal text-sm block"
                         >
                          Team
                         </a>
@@ -144,7 +144,7 @@ export default function Navbar() {
               <li className="group text-[14px] max-lg:border-b max-lg:px-3 max-lg:py-2 relative">
                 <a
                   href="javascript:void(0)"
-                  className="hover:text-[#4ae2fa] hover:fill-[#4ae2fa] text-gray-500 font-bold text-[15px] block"
+                  className="hover:text-[#4ae2fa] hover:fill-[#4ae2fa] text-gray-500 font-normal text-[15px] block"
                 >
                   Service
                   <svg
@@ -167,7 +167,7 @@ export default function Navbar() {
                       <li className="max-lg:border-b py-1 rounded">
                         <a
                           href="javascript:void(0)"
-                          className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
+                          className="hover:text-[#4ae2fa] text-gray-500 font-normal text-sm block"
                         >
                           Design & Development
                         </a>
@@ -175,7 +175,7 @@ export default function Navbar() {
                       <li className="max-lg:border-b py-1 rounded">
                         <Link
                           href="/modern-warehouse"
-                          className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
+                          className="hover:text-[#4ae2fa] text-gray-500 font-normal text-sm block"
                         >
                           Modern  Warehouse
                         </Link>
@@ -183,7 +183,7 @@ export default function Navbar() {
                       <li className="max-lg:border-b py-1 rounded">
                         <Link
                           href="/piling-foundation"
-                          className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
+                          className="hover:text-[#4ae2fa] text-gray-500 font-normal text-sm block"
                         >
                           Piling-Foundation
                         </Link>
@@ -196,7 +196,7 @@ export default function Navbar() {
                       <li className="max-lg:border-b py-1 rounded">
                         <Link
                           href="/floor-coating-application"
-                          className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
+                          className="hover:text-[#4ae2fa] text-gray-500 font-normal text-sm block"
                         >
                           Floor coating application
                         </Link>
@@ -204,7 +204,7 @@ export default function Navbar() {
                       <li className="max-lg:border-b py-1 rounded">
                         <Link
                           href="/supply-ready-mixed-concrete"
-                          className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
+                          className="hover:text-[#4ae2fa] text-gray-500 font-normal text-sm block"
                         >
                          Supply Ready Mixed Concrete
                         </Link>
@@ -212,56 +212,42 @@ export default function Navbar() {
                       <li className="max-lg:border-b py-1 rounded">
                         <Link
                           href="/plant-construction"
-                          className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
+                          className="hover:text-[#4ae2fa] text-gray-500 font-normal text-sm block"
                         >
                            Power Plant Construction
                         </Link>
                       </li>
-                      <li className="max-lg:border-b py-1 rounded">
-                        <Link
-                          href="/general-contracting"
-                          className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
-                        >
-                        General Contracting Services
-                        </Link>
-                      </li>
+                     
                     </ul>
                   </div>
                   <div className="lg:min-w-[180px] max-lg:min-w-[140px]">
                     
-                    <ul className="mt-3 pt-3 space-y-3">
-                      <li className="max-lg:border-b py-1 rounded">
-                        <a
-                          href="javascript:void(0)"
-                          className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
+                    <ul className="mt-3 pt-3 space-y-3 text-sm">
+                    <li className="max-lg:border-b py-1 rounded">
+                        <Link
+                          href="/general-contracting"
+                          className="hover:text-[#4ae2fa] text-gray-500 font-normal text-sm block"
                         >
-                          London
-                        </a>
+                        General Contracting Services
+                        </Link>
                       </li>
                       <li className="max-lg:border-b py-1 rounded">
-                        <a
-                          href="javascript:void(0)"
-                          className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
+                        <Link
+                          href="/consultancy"
+                          className="hover:text-[#4ae2fa] text-gray-500 font-normal text-sm block"
                         >
-                          Edinburgh
-                        </a>
+                          Consultancy
+                        </Link>
                       </li>
                       <li className="max-lg:border-b py-1 rounded">
-                        <a
-                          href="javascript:void(0)"
-                          className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
+                        <Link
+                          href="/leed-green-building"
+                          className="hover:text-[#4ae2fa] text-gray-500 font-normal text-sm block"
                         >
-                          Manchester
-                        </a>
+                           Leed & Green Building
+                        </Link>
                       </li>
-                      <li className="max-lg:border-b py-1 rounded">
-                        <a
-                          href="javascript:void(0)"
-                          className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
-                        >
-                          Birmingham
-                        </a>
-                      </li>
+                     
                     </ul>
                   </div>
                  
@@ -270,9 +256,9 @@ export default function Navbar() {
               <li className="group text-[14px] max-lg:border-b max-lg:px-3 max-lg:py-2 relative">
                 <a
                   href="javascript:void(0)"
-                  className="hover:text-[#4ae2fa] hover:fill-[#4ae2fa] text-gray-500 font-bold text-[15px] block"
+                  className="hover:text-[#4ae2fa] hover:fill-[#4ae2fa] text-gray-500 font-normal text-[15px] block"
                 >
-                  About
+                 Projects
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16px"
@@ -289,58 +275,59 @@ export default function Navbar() {
                 </a>
                 <div className="absolute lg:top-5 max-lg:top-8 -left-6 z-50 flex shadow-lg bg-white max-h-0 overflow-hidden group-hover:opacity-100 group-hover:max-h-[700px] px-8 group-hover:pb-8 group-hover:pt-6 transition-all duration-500">
                   <div className="lg:min-w-[180px] max-lg:min-w-[140px]">
-                    <h6 className="text-base text-[#4ae2fa] font-bold">USA</h6>
+                    <h6 className="text-base text-[#4ae2fa] font-normal">Completed</h6>
                     <ul className="mt-3 pt-3 border-t border-1 space-y-3">
                       <li className="max-lg:border-b py-1 rounded">
-                        <a
-                          href="javascript:void(0)"
-                          className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
+                        <Link
+                          href="/badsha-group"
+                          className="hover:text-[#4ae2fa] text-gray-500 font-normal text-sm block"
                         >
-                          New York
-                        </a>
+                          Badsha Group
+                        </Link>
+                      </li>
+                      <li className="max-lg:border-b py-1 rounded">
+                        <Link
+                          href="/ispahhani-summit"
+                          className="hover:text-[#4ae2fa] text-gray-500 font-normal text-sm block"
+                        >
+                          Ispahhani Summit Alliance Terminal Ltd.
+                        </Link>
                       </li>
                       <li className="max-lg:border-b py-1 rounded">
                         <a
                           href="javascript:void(0)"
-                          className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
+                          className="hover:text-[#4ae2fa] text-gray-500 font-normal text-sm block"
                         >
-                          San Francisco
-                        </a>
-                      </li>
-                      <li className="max-lg:border-b py-1 rounded">
-                        <a
-                          href="javascript:void(0)"
-                          className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
-                        >
-                          Houston
+                          Edison Group
                         </a>
                       </li>
                      
                     </ul>
                   </div>
                   <div className="lg:min-w-[180px] max-lg:min-w-[140px]">
-                    <h6 className="text-base text-[#4ae2fa] font-bold">UK</h6>
+                    <h6 className="text-base text-[#4ae2fa] font-normal">Ongoing
+                    </h6>
                     <ul className="mt-3 pt-3 border-t border-1 space-y-3">
                       <li className="max-lg:border-b py-1 rounded">
-                        <a
-                          href="javascript:void(0)"
-                          className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
+                        <Link
+                          href="/rooppur-power-plant"
+                          className="hover:text-[#4ae2fa] text-gray-500 font-normal text-sm block"
                         >
-                          London
-                        </a>
+                          Rooppur Nuclear Power Plant
+                        </Link>
+                      </li>
+                      <li className="max-lg:border-b py-1 rounded">
+                        <Link
+                          href="/ifad-autos-ltd"
+                          className="hover:text-[#4ae2fa] text-gray-500 font-normal text-sm block"
+                        >
+                        IFAD Autos Ltd.
+                        </Link>
                       </li>
                       <li className="max-lg:border-b py-1 rounded">
                         <a
                           href="javascript:void(0)"
-                          className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
-                        >
-                          Edinburgh
-                        </a>
-                      </li>
-                      <li className="max-lg:border-b py-1 rounded">
-                        <a
-                          href="javascript:void(0)"
-                          className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
+                          className="hover:text-[#4ae2fa] text-gray-500 font-normal text-sm block"
                         >
                           Manchester
                         </a>
@@ -348,7 +335,7 @@ export default function Navbar() {
                       <li className="max-lg:border-b py-1 rounded">
                         <a
                           href="javascript:void(0)"
-                          className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
+                          className="hover:text-[#4ae2fa] text-gray-500 font-normal text-sm block"
                         >
                           Birmingham
                         </a>
@@ -356,20 +343,21 @@ export default function Navbar() {
                     </ul>
                   </div>
                        <div className="lg:min-w-[180px] max-lg:min-w-[140px]">
-                    <h6 className="text-base text-[#4ae2fa] font-bold">UK</h6>
+                    <h6 className="text-base text-[#4ae2fa] font-normal">Ongoing
+                    </h6>
                     <ul className="mt-3 pt-3 border-t border-1 space-y-3">
                       <li className="max-lg:border-b py-1 rounded">
                         <a
-                          href="javascript:void(0)"
-                          className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
+                          href="/rooppur-power-plant"
+                          className="hover:text-[#4ae2fa] text-gray-500 font-normal text-sm block"
                         >
-                          London
+                           Rooppur Nuclear Power Plant
                         </a>
                       </li>
                       <li className="max-lg:border-b py-1 rounded">
                         <a
                           href="javascript:void(0)"
-                          className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
+                          className="hover:text-[#4ae2fa] text-gray-500 font-normal text-sm block"
                         >
                           Edinburgh
                         </a>
@@ -377,7 +365,7 @@ export default function Navbar() {
                       <li className="max-lg:border-b py-1 rounded">
                         <a
                           href="javascript:void(0)"
-                          className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
+                          className="hover:text-[#4ae2fa] text-gray-500 font-normal text-sm block"
                         >
                           Manchester
                         </a>
@@ -385,7 +373,7 @@ export default function Navbar() {
                       <li className="max-lg:border-b py-1 rounded">
                         <a
                           href="javascript:void(0)"
-                          className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block"
+                          className="hover:text-[#4ae2fa] text-gray-500 font-normal text-sm block"
                         >
                           Birmingham
                         </a>
@@ -396,27 +384,27 @@ export default function Navbar() {
                 </div>
               </li>
               <li className="max-lg:border-b max-lg:px-3 max-lg:py-2">
-                <a href="javascript:void(0)" className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block">
+                <a href="javascript:void(0)" className="hover:text-[#4ae2fa] text-gray-500 font-normal text-sm block">
                   Services
                 </a>
               </li>
               <li className="max-lg:border-b max-lg:px-3 max-lg:py-2">
-                <a href="javascript:void(0)" className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block">
+                <a href="javascript:void(0)" className="hover:text-[#4ae2fa] text-gray-500 font-normal text-sm block">
                   Career
                 </a>
               </li>
               <li className="max-lg:border-b max-lg:px-3 max-lg:py-2">
-                <a href="javascript:void(0)" className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block">
+                <a href="javascript:void(0)" className="hover:text-[#4ae2fa] text-gray-500 font-normal text-sm block">
                   Portfolio
                 </a>
               </li>
               <li className="max-lg:border-b max-lg:px-3 max-lg:py-2">
-                <a href="javascript:void(0)" className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block">
+                <a href="javascript:void(0)" className="hover:text-[#4ae2fa] text-gray-500 font-normal text-sm block">
                   Blog
                 </a>
               </li>
               <li className="max-lg:border-b max-lg:px-3 max-lg:py-2">
-                <a href="javascript:void(0)" className="hover:text-[#4ae2fa] text-gray-500 font-bold text-sm block">
+                <a href="javascript:void(0)" className="hover:text-[#4ae2fa] text-gray-500 font-normal text-sm block">
                   Contact
                 </a>
               </li>

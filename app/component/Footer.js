@@ -4,7 +4,8 @@ import { FaPhone,FaMessage,   } from "react-icons/fa6";
 import { FaFacebookF ,FaLinkedinIn ,FaYoutube } from "react-icons/fa";
 export default function Footer() {
   return (
-    <footer className="font-sans tracking-wide bg-black py-10 px-4 sm:px-20">
+   <div>
+     <footer className="font-sans tracking-wide bg-black py-10 px-4 sm:px-20 ">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         <div>
           <div className='bg-[#4ae2fa] flex items-center justify-center -mt-16 mb-3'>
@@ -97,19 +98,22 @@ Dhanmondi, Dhaka-1209, Bangladesh.</p>
         </div>
       </div>
 
-      <div className="border-t  border-[#6b5f5f] pt-8 mt-8 flex justify-between">
-        <p className="text-gray-600 text-sm">
-        Copyright © 2024 <span className='text-gray-400 cursor-pointer hover:underline'>Naif Engineering & Builders Ltd</span> - Developed a by NAIF <span className='text-gray-400 cursor-pointer hover:underline'>Sabbir Rahman.</span>
+      
+     
+    </footer>
+    <div className="border-t bg-[#1A2130] border-[#6b5f5f]  pt-8 px-4 sm:px-20 flex justify-between">
+        <p className="text-gray-400 text-sm pb-5">
+        Copyright © 2024 <span className='text-gray-200 cursor-pointer hover:underline'>Naif Engineering & Builders Ltd</span> - Developed a by NAIF <span className='text-gray-200 cursor-pointer hover:underline'>Sabbir Rahman.</span>
         </p>
         <div className=' flex gap-3 text-gray-600 text-sm'>
           <p className='hidden sm:block cursor-pointer hover:underline hover:text-gray-300'>Disclaimer</p>
           <p className='hidden sm:block cursor-pointer hover:underline hover:text-gray-300'>Privacy Policy</p>
         </div>
       </div>
-      <div className=' sm:hidden block flex gap-3 text-gray-600 text-sm mt-5'>
+      <div className=' sm:hidden px-4 sm:px-20 block flex gap-3 text-gray-400 text-sm  pt-5 bg-[#1A2130] '>
           <p className='cursor-pointer hover:underline hover:text-gray-300'>Disclaimer</p>
           <p className=' cursor-pointer hover:underline hover:text-gray-300'>Privacy Policy</p>
         </div>
-    </footer>
+   </div>
   )
 }
