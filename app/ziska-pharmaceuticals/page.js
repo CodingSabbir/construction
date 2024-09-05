@@ -33,7 +33,7 @@ const images = [
         alt: 'Image 5',
       },
   ];
-export default function  RooppurNuclearPowerPlantPage() {
+export default function  ZiskaPharmaceuticalsPage() {
     const [modalIsOpen, setModalIsOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -69,7 +69,7 @@ export default function  RooppurNuclearPowerPlantPage() {
       <div>
        <div className="flex justify-between items-center bg-[#EEF7FF] border-t-2 mt-16 border-b-2 px-4 sm:px-16 ">
        <h2 className="sm:text-[28px] tracking-widest  uppercase font-bold mb-5 py-4 sm:py-8">
-       IFAD Autos Ltd.
+       Ziska Pharmaceuticals Limited
         </h2>
         <div className="flex gap-5">
               <div
@@ -97,13 +97,13 @@ export default function  RooppurNuclearPowerPlantPage() {
             </p>
           </Link>
           <FaAngleDoubleRight />
-          <p className="text-sm text-gray-600 capitalize">  IFAD Autos Ltd.</p>
+          <p className="text-sm text-gray-600 capitalize">   Ziska Pharmaceuticals Limited</p>
         </div>
       </div>
       <div className="px-4 sm:px-16 my-10">
         <Image
           className="w-full "
-          src="/img/ifad.jpg"
+          src="/img/rooppur.jpg"
           alt="Modern Warehouse image"
           width={700}
           height={500}

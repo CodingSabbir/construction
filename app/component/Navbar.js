@@ -325,25 +325,25 @@ export default function Navbar() {
                         </Link>
                       </li>
                       <li className="max-lg:border-b py-1 rounded">
-                        <a
-                          href="javascript:void(0)"
+                        <Link
+                          href="/akij-group"
                           className="hover:text-[#4ae2fa] text-gray-500 font-normal text-sm block"
                         >
-                          Manchester
-                        </a>
+                          Akij Group
+                        </Link>
                       </li>
                       <li className="max-lg:border-b py-1 rounded">
-                        <a
-                          href="javascript:void(0)"
+                        <Link
+                          href="/ziska-pharmaceuticals"
                           className="hover:text-[#4ae2fa] text-gray-500 font-normal text-sm block"
                         >
-                          Birmingham
-                        </a>
+                          Ziska Pharmaceuticals Limited
+                        </Link>
                       </li>
                     </ul>
                   </div>
                        <div className="lg:min-w-[180px] max-lg:min-w-[140px]">
-                    <h6 className="text-base text-[#4ae2fa] font-normal">Ongoing
+                    <h6 className="text-base text-[#4ae2fa] font-normal">Upcoming
                     </h6>
                     <ul className="mt-3 pt-3 border-t border-1 space-y-3">
                       <li className="max-lg:border-b py-1 rounded">
@@ -351,42 +351,35 @@ export default function Navbar() {
                           href="/rooppur-power-plant"
                           className="hover:text-[#4ae2fa] text-gray-500 font-normal text-sm block"
                         >
-                           Rooppur Nuclear Power Plant
+                          Design and Drawing
                         </a>
                       </li>
                       <li className="max-lg:border-b py-1 rounded">
-                        <a
-                          href="javascript:void(0)"
+                        <Link
+                          href="/color-concrete"
                           className="hover:text-[#4ae2fa] text-gray-500 font-normal text-sm block"
                         >
-                          Edinburgh
-                        </a>
+                         Color Concrete
+                        </Link>
                       </li>
                       <li className="max-lg:border-b py-1 rounded">
-                        <a
-                          href="javascript:void(0)"
+                        <Link
+                          href="/flooring-system"
                           className="hover:text-[#4ae2fa] text-gray-500 font-normal text-sm block"
                         >
-                          Manchester
-                        </a>
+                        Flooring System
+                        </Link>
                       </li>
-                      <li className="max-lg:border-b py-1 rounded">
-                        <a
-                          href="javascript:void(0)"
-                          className="hover:text-[#4ae2fa] text-gray-500 font-normal text-sm block"
-                        >
-                          Birmingham
-                        </a>
-                      </li>
+                      
                     </ul>
                   </div>
                  
                 </div>
               </li>
               <li className="max-lg:border-b max-lg:px-3 max-lg:py-2">
-                <a href="javascript:void(0)" className="hover:text-[#4ae2fa] text-gray-500 font-normal text-sm block">
-                  Services
-                </a>
+                <Link href="/floor/floor-specialist" className="hover:text-[#4ae2fa] text-gray-500 font-normal text-sm block">
+                Floor Specialist
+                </Link>
               </li>
               <li className="max-lg:border-b max-lg:px-3 max-lg:py-2">
                 <a href="javascript:void(0)" className="hover:text-[#4ae2fa] text-gray-500 font-normal text-sm block">

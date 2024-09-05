@@ -33,7 +33,7 @@ const images = [
         alt: 'Image 5',
       },
   ];
-export default function  RooppurNuclearPowerPlantPage() {
+export default function   AkijGroupPage() {
     const [modalIsOpen, setModalIsOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -69,7 +69,7 @@ export default function  RooppurNuclearPowerPlantPage() {
       <div>
        <div className="flex justify-between items-center bg-[#EEF7FF] border-t-2 mt-16 border-b-2 px-4 sm:px-16 ">
        <h2 className="sm:text-[28px] tracking-widest  uppercase font-bold mb-5 py-4 sm:py-8">
-       IFAD Autos Ltd.
+       Akij Group
         </h2>
         <div className="flex gap-5">
               <div
@@ -97,13 +97,13 @@ export default function  RooppurNuclearPowerPlantPage() {
             </p>
           </Link>
           <FaAngleDoubleRight />
-          <p className="text-sm text-gray-600 capitalize">  IFAD Autos Ltd.</p>
+          <p className="text-sm text-gray-600 capitalize"> Akij Group</p>
         </div>
       </div>
       <div className="px-4 sm:px-16 my-10">
         <Image
           className="w-full "
-          src="/img/ifad.jpg"
+          src="/img/floor_System_Banner.jpg"
           alt="Modern Warehouse image"
           width={700}
           height={500}
@@ -168,16 +168,122 @@ export default function  RooppurNuclearPowerPlantPage() {
       </Modal>
     </div>
       </div>
-      <div className="grid sm:grid-cols-2 gap-5 px-4 sm:px-16">
-        <div>
+      <div className="grid lg:grid-cols-2 gap-5 px-4 sm:px-16">
+        <div className="hidden sm:block">
           <h1 className=" text-md text-gray-800 sm:text-xl font-semibold">Project Description</h1>
           <Devider/>
-          <p className="text-sm text-gray-500 py-1"><span className="font-bold text-gray-700 ">Project Name: </span> Rooppur Nuclear Power Plant</p>
-          <p className="text-sm text-gray-500 py-1"><span className="font-bold text-gray-700 ">Client: </span>Ministry Of Science and Technology ( Bangladesh ) Bangladesh Atomic Energy Commission</p>
-          <p className="text-sm text-gray-500 py-1"><span className="font-bold text-gray-700 ">Project Description:  </span>Road Construction R.C.C Work</p>
-          <p className="text-sm text-gray-500 py-1"><span className="font-bold text-gray-700 ">Location: </span>Dhamrai, Dhaka.</p>
-          <p className="text-sm text-gray-500 py-1"><span className="font-bold text-gray-700 ">Surface Area: </span>38000 sft</p>
-          <p className="text-sm text-gray-500 py-1"><span className="font-bold text-gray-700 ">Year Completed: </span>2024</p>
+          <div class="flex flex-col ">
+  <div class="sm:-mx-6 lg:-mx-8">
+    <div class="inline-block min-w-full py-2 sm:px-3 lg:px-8">
+      <div class="overflow-x-auto">
+        <table
+          class="min-w-full border border-neutral-200 text-center text-sm font-light text-surface dark:border-white/10 dark:text-white">
+          <thead
+            class="border-b border-neutral-200 font-medium dark:border-white/10">
+            <tr>
+              <th
+                scope="col"
+                class="border border-neutral-200 px-3 py-4 text-sm text-gray-600 dark:border-white/10">
+                Floor Description
+              </th>
+              <th
+                scope="col"
+                class="border border-neutral-200 px-3 py-4 text-sm text-gray-600 dark:border-white/10">
+                Company
+              </th>
+              <th
+                scope="col"
+                class="border border-neutral-200 px-3 py-4 text-sm text-gray-600 dark:border-white/10">
+                Floor Type
+              </th>
+              <th
+                scope="col"
+                class="border border-neutral-200 px-3 py-4 text-sm text-gray-600 dark:border-white/10">
+                Total Sft
+              </th>
+              <th
+                scope="col"
+                class="border border-neutral-200 px-3 py-4 text-sm text-gray-600 dark:border-white/10">
+                Location
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-neutral-200 dark:border-white/10">
+              <td
+                class="whitespace-nowrap border border-neutral-200 px-3 py-4 text-xs dark:border-white/10">
+                floor finishing work <br /> with ride on power trowel
+              </td>
+              <td
+                class="whitespace-nowrap border text-xs border-neutral-200 px-3 py-4 dark:border-white/10">
+                Akij Plastic Limited
+              </td>
+              <td
+                class="whitespace-nowrap border text-xs border-neutral-200 px-3 py-4 dark:border-white/10">
+                Floor Construction
+              </td>
+              <td class="whitespace-nowrap border text-xs border-neutral-200 px-3 py-4 dark:border-white/10">100000 sft</td>
+              <td class="whitespace-nowrap border text-xs border-neutral-200 px-3 py-4 dark:border-white/10">Mymensing</td>
+            </tr>
+            <tr class="border-b border-neutral-200 dark:border-white/10">
+              <td
+                class="whitespace-nowrap border border-neutral-200 px-3 py-4 text-xs dark:border-white/10">
+                floor finishing work <br /> with ride on power trowel
+              </td>
+              <td
+                class="whitespace-nowrap border text-xs border-neutral-200 px-3 py-4 dark:border-white/10">
+                Akij Plastic Limited
+              </td>
+              <td
+                class="whitespace-nowrap border text-xs border-neutral-200 px-3 py-4 dark:border-white/10">
+                Floor Construction
+              </td>
+              <td class="whitespace-nowrap border text-xs border-neutral-200 px-3 py-4 dark:border-white/10">100000 sft</td>
+              <td class="whitespace-nowrap border text-xs border-neutral-200 px-3 py-4 dark:border-white/10">Mymensing</td>
+            </tr>
+            <tr class="border-b border-neutral-200 dark:border-white/10">
+              <td
+                class="whitespace-nowrap border border-neutral-200 px-3 py-4 text-xs dark:border-white/10">
+                floor finishing work <br /> with ride on power trowel
+              </td>
+              <td
+                class="whitespace-nowrap border text-xs border-neutral-200 px-3 py-4 dark:border-white/10">
+                Akij Plastic Limited
+              </td>
+              <td
+                class="whitespace-nowrap border text-xs border-neutral-200 px-3 py-4 dark:border-white/10">
+                Floor Construction
+              </td>
+              <td class="whitespace-nowrap border text-xs border-neutral-200 px-3 py-4 dark:border-white/10">100000 sft</td>
+              <td class="whitespace-nowrap border text-xs border-neutral-200 px-3 py-4 dark:border-white/10">Mymensing</td>
+            </tr>
+            <tr class="border-b border-neutral-200 dark:border-white/10">
+              <td
+                class="whitespace-nowrap border border-neutral-200 px-3 py-4 text-xs dark:border-white/10">
+                floor finishing work <br /> with ride on power trowel
+              </td>
+              <td
+                class="whitespace-nowrap border text-xs border-neutral-200 px-3 py-4 dark:border-white/10">
+                Akij Plastic Limited
+              </td>
+              <td
+                class="whitespace-nowrap border text-xs border-neutral-200 px-3 py-4 dark:border-white/10">
+                Floor Construction
+              </td>
+              <td class="whitespace-nowrap border text-xs border-neutral-200 px-3 py-4 dark:border-white/10">100000 sft</td>
+              <td class="whitespace-nowrap border text-xs border-neutral-200 px-3 py-4 dark:border-white/10">Mymensing</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
         </div>
         <div>
           <h1  className=" text-md text-gray-800 sm:text-xl font-semibold">The Challenges</h1>

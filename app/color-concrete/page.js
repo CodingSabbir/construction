@@ -9,31 +9,31 @@ import Devider from "../component/Devider";
 
 const images = [
     {
-      src: '/img/supply-ready-mixed (4).jpg',
+      src: '/img/color (1).jpg',
       alt: 'Image 1',
     },
     {
-      src: '/img/badsha (2).jpg',
+      src: '/img/color (2).jpg',
       alt: 'Image 2',
     },
     {
-      src: '/img/roopur-azi (1).jpg',
+      src: '/img/color (3).jpg',
       alt: 'Image 3',
     },
     {
-      src: '/img/ifad_gall3.jpg',
+      src: '/img/color (4).jpg',
       alt: 'Image 4',
     },
     {
-      src: '/img/ifad_gall6.jpg',
+      src: '/img/color (5).jpg',
       alt: 'Image 5',
     },
     {
-        src: '/img/roopur-azi (4).jpg',
+        src: '/img/color-concrete (6).jpg',
         alt: 'Image 5',
       },
   ];
-export default function  RooppurNuclearPowerPlantPage() {
+export default function   ColorConcretePage() {
     const [modalIsOpen, setModalIsOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -69,7 +69,7 @@ export default function  RooppurNuclearPowerPlantPage() {
       <div>
        <div className="flex justify-between items-center bg-[#EEF7FF] border-t-2 mt-16 border-b-2 px-4 sm:px-16 ">
        <h2 className="sm:text-[28px] tracking-widest  uppercase font-bold mb-5 py-4 sm:py-8">
-       IFAD Autos Ltd.
+       Ziska Pharmaceuticals Limited
         </h2>
         <div className="flex gap-5">
               <div
@@ -97,13 +97,13 @@ export default function  RooppurNuclearPowerPlantPage() {
             </p>
           </Link>
           <FaAngleDoubleRight />
-          <p className="text-sm text-gray-600 capitalize">  IFAD Autos Ltd.</p>
+          <p className="text-sm text-gray-600 capitalize">   Ziska Pharmaceuticals Limited</p>
         </div>
       </div>
       <div className="px-4 sm:px-16 my-10">
         <Image
           className="w-full "
-          src="/img/ifad.jpg"
+          src="/img/color_concrete_banner.jpg"
           alt="Modern Warehouse image"
           width={700}
           height={500}
@@ -168,17 +168,8 @@ export default function  RooppurNuclearPowerPlantPage() {
       </Modal>
     </div>
       </div>
-      <div className="grid sm:grid-cols-2 gap-5 px-4 sm:px-16">
-        <div>
-          <h1 className=" text-md text-gray-800 sm:text-xl font-semibold">Project Description</h1>
-          <Devider/>
-          <p className="text-sm text-gray-500 py-1"><span className="font-bold text-gray-700 ">Project Name: </span> Rooppur Nuclear Power Plant</p>
-          <p className="text-sm text-gray-500 py-1"><span className="font-bold text-gray-700 ">Client: </span>Ministry Of Science and Technology ( Bangladesh ) Bangladesh Atomic Energy Commission</p>
-          <p className="text-sm text-gray-500 py-1"><span className="font-bold text-gray-700 ">Project Description:  </span>Road Construction R.C.C Work</p>
-          <p className="text-sm text-gray-500 py-1"><span className="font-bold text-gray-700 ">Location: </span>Dhamrai, Dhaka.</p>
-          <p className="text-sm text-gray-500 py-1"><span className="font-bold text-gray-700 ">Surface Area: </span>38000 sft</p>
-          <p className="text-sm text-gray-500 py-1"><span className="font-bold text-gray-700 ">Year Completed: </span>2024</p>
-        </div>
+      <div className=" px-4 sm:px-16">
+       
         <div>
           <h1  className=" text-md text-gray-800 sm:text-xl font-semibold">The Challenges</h1>
          <Devider/>
