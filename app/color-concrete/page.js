@@ -93,7 +93,7 @@ export default function   ColorConcretePage() {
           <FaAngleDoubleRight />
           <Link href='/our-service'>
             <p className="text-sm text-gray-600 capitalize hover:text-[#4ae2fa] hover:underline cursor-pointer">
-            Ongoing
+            Upcoming
             </p>
           </Link>
           <FaAngleDoubleRight />

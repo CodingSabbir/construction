@@ -7,6 +7,27 @@ import { useState } from 'react';
 import Modal from 'react-modal'; 
 import Devider from "../component/Devider";
 
+const pages=[
+  {id:1,
+    link:"/ziska-pharmaceuticals",
+  },
+  {id:2,
+    link:"/rooppur-power-plant",
+  },
+  {id:3,
+    link:"/ifad-autos-ltd",
+  },
+  {id:4,
+    link:"/color-concrete",
+  },
+  {id:5,
+    link:"/akij-group",
+  },
+  {id:6,
+    link:"/badsha-group",
+  },
+]
+
 const images = [
     {
       src: '/img/supply-ready-mixed (4).jpg',
@@ -34,6 +55,7 @@ const images = [
       },
   ];
 export default function   AkijGroupPage() {
+
     const [modalIsOpen, setModalIsOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 

@@ -382,24 +382,24 @@ export default function Navbar() {
                 </Link>
               </li>
               <li className="max-lg:border-b max-lg:px-3 max-lg:py-2">
-                <a href="javascript:void(0)" className="hover:text-[#4ae2fa] text-gray-500 font-normal text-sm block">
-                  Career
-                </a>
+                <Link href="/plining-foundtions" className="hover:text-[#4ae2fa] text-gray-500 font-normal text-sm block">
+                Piling-Foundation
+                </Link>
               </li>
               <li className="max-lg:border-b max-lg:px-3 max-lg:py-2">
-                <a href="javascript:void(0)" className="hover:text-[#4ae2fa] text-gray-500 font-normal text-sm block">
-                  Portfolio
-                </a>
-              </li>
-              <li className="max-lg:border-b max-lg:px-3 max-lg:py-2">
-                <a href="javascript:void(0)" className="hover:text-[#4ae2fa] text-gray-500 font-normal text-sm block">
-                  Blog
-                </a>
-              </li>
-              <li className="max-lg:border-b max-lg:px-3 max-lg:py-2">
-                <a href="javascript:void(0)" className="hover:text-[#4ae2fa] text-gray-500 font-normal text-sm block">
+                <Link href="/contact" className="hover:text-[#4ae2fa] text-gray-500 font-normal text-sm block">
                   Contact
-                </a>
+                </Link>
+              </li>
+              <li className="max-lg:border-b max-lg:px-3 max-lg:py-2">
+                <Link href="/blog" className="hover:text-[#4ae2fa] text-gray-500 font-normal text-sm block">
+                  Blog
+                </Link>
+              </li>
+              <li className="max-lg:border-b max-lg:px-3 max-lg:py-2">
+                <Link href="/career" className="hover:text-[#4ae2fa] text-gray-500 font-normal text-sm block">
+                Career
+                </Link>
               </li>
              
             </ul>
