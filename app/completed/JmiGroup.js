@@ -9,7 +9,7 @@ import Devider from "../component/Devider";
 
 const images = [
     {
-      src: '/img/badsha (1).jpg',
+      src: '/img/supply-ready-mixed (4).jpg',
       alt: 'Image 1',
     },
     {
@@ -17,23 +17,23 @@ const images = [
       alt: 'Image 2',
     },
     {
-      src: '/img/badsha (3).jpg',
+      src: '/img/roopur-azi (1).jpg',
       alt: 'Image 3',
     },
     {
-      src: '/img/badsha (4).jpg',
+      src: '/img/ifad_gall3.jpg',
       alt: 'Image 4',
     },
     {
-      src: '/img/badsha (5).jpg',
+      src: '/img/ifad_gall6.jpg',
       alt: 'Image 5',
     },
     {
-        src: '/img/badsha (6).jpg',
+        src: '/img/roopur-azi (4).jpg',
         alt: 'Image 5',
       },
   ];
-export default function  IspahhaniSummitAlliancePage() {
+export default function  JMIGroup() {
     const [modalIsOpen, setModalIsOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -67,50 +67,20 @@ export default function  IspahhaniSummitAlliancePage() {
       {" "}
       {/* Reduced bottom margin */}
       <div>
-       <div className="flex justify-between items-center bg-[#EEF7FF] border-t-2 mt-16 border-b-2 px-4 sm:px-16 ">
-       <h2 className="sm:text-[28px] tracking-widest  uppercase font-bold mb-5 py-4 sm:py-8">
-       Ispahhani Summit Alliance Terminal Ltd.
-        </h2>
-        <div className="flex gap-5">
-              <div
-                className="border-2 hover:border-gray-500 text-xl p-2 cursor-pointer"
-                
-              >
-                <FaChevronLeft/>
-              </div>
-              <div
-                className="border-2 hover:border-gray-500 text-xl p-2 cursor-pointer"
-                
-              >
-                <FaChevronRight />
-              </div>
-            </div>
-       </div>
-        <div className="border-b-2 flex items-center gap-3 px-4 py-4 sm:px-16">
-          <p className="text-sm text-gray-600 hover:text-[#4ae2fa] hover:underline cursor-pointer">
-            Airon solution Ltd.
-          </p>
-          <FaAngleDoubleRight />
-          <Link href='/completed'>
-            <p className="text-sm text-gray-600 capitalize hover:text-[#4ae2fa] hover:underline cursor-pointer">
-            Completed
-            </p>
-          </Link>
-          <FaAngleDoubleRight />
-          <p className="text-sm text-gray-600 capitalize">  Ispahhani Summit Alliance Terminal Ltd.</p>
-        </div>
+      
+        
       </div>
-      <div className="px-4 sm:px-16 my-10">
+      <div className="mr-6 my-10">
         <Image
-          className="w-full "
-          src="/img/ispahani.jpg"
+          className="w-full rounded-lg "
+          src="/img/ifad.jpg"
           alt="Modern Warehouse image"
           width={700}
           height={500}
         />
       </div>
       <div>
-      <div className="my-8 px-4 sm:px-16">
+      <div className="my-8 sm:mr-6">
       <div className="grid grid-cols-6 gap-4">
         {images.map((image, index) => (
           <div key={index} className="relative">
@@ -168,14 +138,15 @@ export default function  IspahhaniSummitAlliancePage() {
       </Modal>
     </div>
       </div>
-      <div className="grid sm:grid-cols-2 gap-5 px-4 sm:px-16">
+      <div className="grid sm:grid-cols-2 gap-5 sm:mr-6">
         <div>
           <h1 className=" text-md text-gray-800 sm:text-xl font-semibold">Project Description</h1>
           <Devider/>
-          <p className="text-sm text-gray-500 py-1"><span className="font-bold text-gray-700 ">Project Name: </span> Superflat Floor Construction</p>
-          <p className="text-sm text-gray-500 py-1"><span className="font-bold text-gray-700 ">Client: </span>Pioneer Denim Limited, Badsha Group</p>
-          <p className="text-sm text-gray-500 py-1"><span className="font-bold text-gray-700 ">Location: </span>Sylhet, Bangladesh.</p>
-          <p className="text-sm text-gray-500 py-1"><span className="font-bold text-gray-700 ">Surface Area: </span>1400000 sft</p>
+          <p className="text-sm text-gray-500 py-1"><span className="font-bold text-gray-700 ">Project Name: </span> Rooppur Nuclear Power Plant</p>
+          <p className="text-sm text-gray-500 py-1"><span className="font-bold text-gray-700 ">Client: </span>Ministry Of Science and Technology ( Bangladesh ) Bangladesh Atomic Energy Commission</p>
+          <p className="text-sm text-gray-500 py-1"><span className="font-bold text-gray-700 ">Project Description:  </span>Road Construction R.C.C Work</p>
+          <p className="text-sm text-gray-500 py-1"><span className="font-bold text-gray-700 ">Location: </span>Dhamrai, Dhaka.</p>
+          <p className="text-sm text-gray-500 py-1"><span className="font-bold text-gray-700 ">Surface Area: </span>38000 sft</p>
           <p className="text-sm text-gray-500 py-1"><span className="font-bold text-gray-700 ">Year Completed: </span>2024</p>
         </div>
         <div>

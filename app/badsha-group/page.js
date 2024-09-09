@@ -91,7 +91,7 @@ export default function BadshaGroupPage() {
             Airon solution Ltd.
           </p>
           <FaAngleDoubleRight />
-          <Link href='/our-service'>
+          <Link href='/completed'>
             <p className="text-sm text-gray-600 capitalize hover:text-[#4ae2fa] hover:underline cursor-pointer">
             Completed
             </p>
